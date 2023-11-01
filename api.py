@@ -3,9 +3,6 @@ import psycopg2
 import pprint
 
 api_keys = [
-    # '50c1f257-c317-4a85-bec3-b74af962569a',
-    # '1de83d30-f18a-4e98-ad3b-5a1579f97f14',
-    # '41fefaa9-cd33-475d-88e9-d5e02b30d00d'
 ]
 
 query = """
@@ -28,11 +25,11 @@ for k in api_keys:
 
 # Connect to dev db
 conn = psycopg2.connect(
-    host="hyas-user.postgres.database.azure.com",
-    port=5432,
-    database="dev",
-    user="postgres@hyas-user",
-    password="u5U-yJw-Wun-H3Q")
+    host="",
+    port=,
+    database="",
+    user="",
+    password="")
 cursor = conn.cursor()
 
 for o in api_objs:
